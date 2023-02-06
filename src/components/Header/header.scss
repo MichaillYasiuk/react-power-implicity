@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 1170px;
+  padding: 0px 30px;
+}
+
+.logo {
+  justify-self: start;
+  margin-top: 30px;
+}
+
+.header {
+  &__wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  &__navigation {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 62px;
+    max-width: 310px;
+    margin-top: 32px;
+    @media (max-width: 756px) {
+      gap: 50px;
+    }
+    @media (max-width: 530px) {
+      place-items: center;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+    &-link {
+      font-family: 'Montserrat';
+      color: #9fa1a5;
+      font-size: 14px;
+    }
+  }
+  &__btn {
+    justify-self: end;
+    margin-top: 32px;
+    padding: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #24282e;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    @media (max-width: 756px) {
+      font-size: 12px;
+    }
+  }
+}
