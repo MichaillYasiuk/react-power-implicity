@@ -1,0 +1,37 @@
+.slider-item {
+  max-width: 600px;
+  &__title {
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #f2f4f7;
+    font-weight: 400;
+    font-size: 72px;
+    @media (max-width: 550px) {
+      font-size: 48px;
+    }
+  }
+  &__description {
+    margin-top: 32px;
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #f2f4f7;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  &__btn {
+    display: block;
+    margin: 80px auto 0;
+    padding: 15px 95px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    border: 2px solid;
+    border-image: linear-gradient(125deg, #831b2c, #6b51db);
+    border-image-slice: 1;
+    background: linear-gradient(125deg, #c0213b, #7a65d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: linear-gradient(#802232, #3d2996);
+    cursor: pointer;
+  }
+}
